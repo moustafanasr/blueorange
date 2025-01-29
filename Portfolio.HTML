@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/Portfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- div Award Winning Elastic Cursor Follow Animation -->
+    <div class="cursor"></div>
+
+    <main>
+      <!-- start main header info  -->
+      <section class="landing-news">
+        <div class="container">
+          <div class="landing-news-content">
+            <div class="heading">
+              <h2>Our Work</h2>
+            </div>
+            <p class="description">
+              Throughout our careers, we have consistently delivered exceptional work and provided our clients with the
+              utmost professionalism. We are proud to showcase a selection of our past projects for your consideration.
+            </p>
+            <button class="buttons">
+              <span class="btn-span slider" data-text="Request Service">Request Service</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- End main header info  -->
+      <!-- Start Section articles -->
+      <section class="articles">
+        <div class="container">
+          <div class="articles-content">
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+              <button class="buttons active" data-filter="all">
+                <span class="btn-span" data-text="All">All</span>
+              </button>
+              <button class="buttons" data-filter="branding">
+                <span class="btn-span" data-text="Branding Design">Branding Design</span>
+              </button>
+              <button class="buttons" data-filter="social-media">
+                <span class="btn-span" data-text="Social Media Design">Social Media Design</span>
+              </button>
+              <button class="buttons" data-filter="video">
+                <span class="btn-span" data-text="Video Montage">Video Montage</span>
+              </button>
+              <button class="buttons" data-filter="motion">
+                <span class="btn-span" data-text="Motion Graphic">Motion Graphic</span>
+              </button>
+              <button class="buttons" data-filter="web">
+                <span class="btn-span" data-text="Websites">Websites</span>
+              </button>
+              <button class="buttons" data-filter="photography">
+                <span class="btn-span" data-text="Photography">Photography</span>
+              </button>
+              <button class="buttons" data-filter="seo">
+                <span class="btn-span" data-text="SEO">SEO</span>
+              </button>
+              <button class="buttons" data-filter="sem">
+                <span class="btn-span" data-text="SEM">SEM</span>
+              </button>
+              <button class="buttons" data-filter="social-media-marketing">
+                <span class="btn-span" data-text="Social Media Marketing">Social Media Marketing</span>
+              </button>
+              <button class="buttons" data-filter="digital-marketing">
+                <span class="btn-span" data-text="Digital Marketing">Digital Marketing</span>
+              </button>
+            </div>
+
+            <!-- Work Content Grid -->
+            <div class="work-content">
+              <!-- Work Items -->
+              <div class="work-item" data-category="branding">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="./img/3-srv01-1.1.svg" alt="Branding Project 1">
+                    <div class="info">
+                      <p class="title">Blue Orange Agency Brand Book</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                    <button class="new-tag">New</button>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="social-media">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/3-srv01-9.svg" alt="Social Media Project 1">
+                    <div class="info">
+                      <p class="title">Social Media Campaign</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="video">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/IMG_2650-scaled.jpg" alt="Video Project 1">
+                    <div class="info">
+                      <p class="title">Product Launch Video</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="motion">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/Screenshot-2024-11-23-at-4.06.55 PM.png" alt="Motion Graphic Project 1">
+                    <div class="info">
+                      <p class="title">Animated Logo</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="web">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/Screenshot-2024-11-23-at-4.02.50 PM.png" alt="Website Project 1">
+                    <div class="info">
+                      <p class="title">E-Commerce Website</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="web">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/Screenshot-2024-11-23-at-3.50.17 PM.png" alt="Website Project 1">
+                    <div class="info">
+                      <p class="title">E-Commerce Website</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="web">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/Screenshot-2024-11-23-at-3.56.45 PM.png" alt="Website Project 1">
+                    <div class="info">
+                      <p class="title">E-Commerce Website</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="web">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/Screenshot-2024-11-23-at-3.58.31 PM.png" alt="Website Project 1">
+                    <div class="info">
+                      <p class="title">E-Commerce Website</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="web">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/3-srv01-8.svg" alt="Website Project 1">
+                    <div class="info">
+                      <p class="title">E-Commerce Website</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="web">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/Screenshot-2024-11-24-at-2.16.03 AM.png" alt="Website Project 1">
+                    <div class="info">
+                      <p class="title">E-Commerce Website</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="web">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/Screenshot-2024-11-24-at-2.12.57 AM.png" alt="Website Project 1">
+                    <div class="info">
+                      <p class="title">E-Commerce Website</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="work-item" data-category="web">
+                <a href="/our-work/">
+                  <div class="figure">
+                    <img src="img/Screenshot-2024-11-24-at-2.10.52 AM.png" alt="Website Project 1">
+                    <div class="info">
+                      <p class="title">E-Commerce Website</p>
+                      <button class="category">Branding Design</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+              <!-- <button class="pagination-button disabled">&laquo;</button> -->
+              <!-- <button class="page-number active">1</button>
+              <button class="page-number">2</button>
+              <button class="page-number">3</button> -->
+              <!-- <button class="pagination-button">&raquo;</button> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Section articles -->
+      <!-- start section testimonial -->
+      <section class="testimonial-section">
+        <div class="container">
+          <div class="feed-content">
+            <!-- Heading -->
+            <div class="heading">
+              <h2>What Our Clients Say About Us</h2>
+              <p>With more than five years of experience in digital marketing, we have had the privilege of
+                collaborating with some remarkable clients.</p>
+            </div>
+
+            <!-- Testimonial Slider -->
+            <div class="swiperTestimonial">
+
+              <!-- Slider Content -->
+              <div class="swiper-wrapper">
+                <!-- Testimonial Item 1 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>"Working with Blue Orange has been an absolute pleasure. From the very beginning, their
+                      professionalism and dedication to our vision were evident. The team was incredibly attentive to
+                      our needs, translating our ideas into a stunning and functional design that exceeded our
+                      expectations."</p>
+                    <div class="client-info">
+                      <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Untitled-hosah.png"
+                        alt="Tarek Ziedo">
+                      <div class="client-details">
+                        <span class="client-name">Ehsan Saghier</span>
+                        <span class="client-role">CEO, Hosa Wa Nos</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Item 2 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>"It was and still is a good experience, excellent staff and management.I hope you maintain the
+                      quality of work and speed of response."</p>
+                    <div class="client-info">
+                      <img src="./img/AmadAidra.png" alt="Tarek Ziedo">
+                      <div class="client-details">
+                        <span class="client-name">Ahmad Hammami</span>
+                        <span class="client-role">Director, Sidra Cafe UK</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Item 3 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>"An excellent experience, with precision, quality of work, and attention to detail."</p>
+                    <div class="client-info">
+                      <img src="./img/Mai.png" alt="Tarek Ziedo">
+                      <div class="client-details">
+                        <span class="client-name">May Mahmoud</span>
+                        <span class="client-role">Communication Officer, Action Against Hunger Organization</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Item 4 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>"Precision, artistry, and integrity!Benefits of partnering with Blue Orange: With over four years
+                      of experience, our work continues to evolve and flourish. Our relationship has evolved beyond a
+                      mere business association.Impeccable collaboration and exceptional customer service are our
+                      hallmarks"</p>
+                    <div class="client-info">
+                      <img src="./img/Haitham.png" alt="Tarek Ziedo">
+                      <div class="client-details">
+                        <span class="client-name">Haitham Maghrabi</span>
+                        <span class="client-role">Manufacturing Manager - Makin Al-Nokhba Architectural Contracting
+                          Company</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Item 5 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>"Very glad to deal with a company like you and your team. Very quick response to all the
+                      changes in the videos and work in general without any complaints."</p>
+                    <div class="client-info">
+                      <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Ramia.png"
+                        alt="Ramia Alnabcha">
+                      <div class="client-details">
+                        <span class="client-name">Ramia Alnabcha</span>
+                        <span class="client-role">Area Manager, SIF Organization</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Item 6 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>"Every time we are surprised by the intelligence of the product offered by the company in terms
+                      of idea, design, purpose, and aesthetics. Your company is always my first choice to recommend to
+                      other customers because you are one of the companies with a distinctive product."</p>
+                    <div class="client-info">
+                      <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/طارق-زيدوA.png"
+                        alt="Tarek Ziedo">
+                      <div class="client-details">
+                        <span class="client-name">Tarek Ziedo</span>
+                        <span class="client-role">Project Manager - UNDP Organization</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more testimonial items here -->
+              </div>
+
+              <!-- Pagination Dots -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End section testimonial -->
+      <!-- Start Footer   -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <!-- Left Column: Description and Social Media -->
+            <div class="footer-left">
+              <h3 class="footer-description">
+                Blue Orange takes pride in being a valued partner, providing tailored solutions designed to help you
+                maximize revenue and achieve your objective.
+              </h3>
+              <div class="follow-us">
+                <span class="follow-us-text">Follow us</span>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/facebook.png" alt="Icon 1">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/instgram.png" alt="Icon 2">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/LinkedIn.png" alt="Icon 3">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <img src="./img/BLUE.png" alt="Icon 4">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right Column: Quick Links and Contact Info -->
+            <div class="footer-right">
+              <!-- Quick Links -->
+              <div class="quick-links">
+                <span class="section-title">Quick Links</span>
+                <ul>
+                  <li><a href="https://blueorangedesigns.com/about-us/">About Us</a></li>
+                  <li><a href="https://blueorangedesigns.com/services/">Services</a></li>
+                  <li><a href="https://blueorangedesigns.com/our-work/">Portfolio</a></li>
+                  <li><a href="https://blueorangedesigns.com/contact-us/">Contact</a></li>
+                </ul>
+              </div>
+
+              <!-- Contact Info -->
+              <div class="contact-info">
+                <span class="section-title">Contact Us:</span>
+                <span class="contact-item"><a href="#">+971-50-933-5405</a></span>
+                <span class="contact-item"><a href="#">contact@blueorangedesigns.com</a></span>
+                <span class="contact-item"><a href="#">@BlueOrangeAgency Dubai, UAE</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer   -->
+    </main>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+    <script src="./js/main.js" async defer></script>
+    <script src="./js/Portfolio.js" async defer></script>
+  </body>
+
+</html>

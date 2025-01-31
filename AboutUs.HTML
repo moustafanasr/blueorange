@@ -12,6 +12,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <!-- End Font Google -->
     <link rel="stylesheet" href="./style/main.css">
     <!-- <link rel="stylesheet" href="./style/Portfolio.css"> -->
     <!-- <link rel="stylesheet" href="./style/News.css"> -->
@@ -27,7 +33,57 @@
     <!-- div Award Winning Elastic Cursor Follow Animation -->
     <div class="cursor"></div>
 
-    <main>
+    <!-- start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Official-Logo-Colored.png" alt="Logo">
+          </div>
+
+          <!-- Navigation Links -->
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="./AboutUs.HTML">About Us</a></li>
+            <li><a href="./Services.HTML">Services</a></li>
+            <li><a href="./Portfolio.HTML">Portfolio</a></li>
+            <li><a href="./News.HTML">News</a></li>
+            <li><a href="./Contact.HTML">Contact</a></li>
+          </ul>
+
+          <!-- Contact Button -->
+          <div class="contact-button">
+            <span class="contact-text">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+                width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                </path>
+              </svg>
+              +971-50-933-5405
+            </span>
+            <span class="contact-text">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+                width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                </path>
+              </svg>
+              +971-50-933-5405
+            </span>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button class="menu-button" id="menu-button">
+            <span class="menu-icon">=</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <main class="smooth-scroll-wrapper">
       <!-- start main header info  -->
       <section class="landing-news">
         <div class="container">
@@ -90,7 +146,7 @@
               <div class="word">Our</div>
               <div class="word">Mission</div>
             </h2>
-      
+
             <!-- Paragraph -->
             <p class="paragraph">
               <span class="word">Our</span>
@@ -132,7 +188,7 @@
               <span class="word">our</span>
               <span class="word">own.</span>
             </p>
-      
+
             <!-- Scrolling Text -->
             <div class="scroller">
               <ul class="tag-list">
@@ -150,62 +206,87 @@
           <div class="faq-content">
             <!-- Heading -->
             <h2 class="head-award">How We Stand Out</h2>
-      
+
             <!-- FAQ Items -->
             <div class="faq-items">
               <!-- FAQ Item 1 -->
               <div class="faq-item">
                 <div class="icon">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                    </path>
                   </svg>
                 </div>
                 <p class="text">
-                  Blue Orange Is A Premier Digital Marketing Agency Focused On Serving The Needs Of Many Companies Seeking Greater Visibility Online Through Various Marketing Channels. Our Original Focus Was Strictly On Design And Video Services.
+                  Blue Orange Is A Premier Digital Marketing Agency Focused On Serving The Needs Of Many Companies
+                  Seeking Greater Visibility Online Through Various Marketing Channels. Our Original Focus Was Strictly
+                  On Design And Video Services.
                 </p>
               </div>
-      
+
               <!-- FAQ Item 2 -->
               <div class="faq-item">
                 <div class="icon">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                    </path>
                   </svg>
                 </div>
                 <p class="text">
-                  We Quickly Moved Into Content Marketing And Social Media. We Have Now Evolved Into A Full-Service Digital Marketing Firm Providing Expert Solutions And Integrated Resources For Clients Seeking Superior Service And Expert Advice Designed To Increase Online Visibility, Traffic, Lead Generation, And Revenue.
+                  We Quickly Moved Into Content Marketing And Social Media. We Have Now Evolved Into A Full-Service
+                  Digital Marketing Firm Providing Expert Solutions And Integrated Resources For Clients Seeking
+                  Superior Service And Expert Advice Designed To Increase Online Visibility, Traffic, Lead Generation,
+                  And Revenue.
                 </p>
               </div>
-      
+
               <!-- FAQ Item 3 -->
               <div class="faq-item">
                 <div class="icon">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                    </path>
                   </svg>
                 </div>
                 <p class="text">
-                  We Provide Highly Focused Digital Marketing Services For Companies In Competitive Markets. Our Services Include Social Media Design, Visual Identity, And Branding Design, Motion Graphic Design, Printing And Packaging Design, Animation Drawing, SEO, SEM, Email Marketing, Paid Search Management (PPC), Paid Social Media, Display, Reputation Management, Website Design, And Development, Web Hosting, And General Digital Marketing Consulting.
+                  We Provide Highly Focused Digital Marketing Services For Companies In Competitive Markets. Our
+                  Services Include Social Media Design, Visual Identity, And Branding Design, Motion Graphic Design,
+                  Printing And Packaging Design, Animation Drawing, SEO, SEM, Email Marketing, Paid Search Management
+                  (PPC), Paid Social Media, Display, Reputation Management, Website Design, And Development, Web
+                  Hosting, And General Digital Marketing Consulting.
                 </p>
               </div>
-      
+
               <!-- FAQ Item 4 -->
               <div class="faq-item">
                 <div class="icon">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                    </path>
                   </svg>
                 </div>
                 <p class="text">
-                  Our Clients Include Small And Large B2B And B2C Companies Including ECommerce And Lead Generation Websites.
+                  Our Clients Include Small And Large B2B And B2C Companies Including ECommerce And Lead Generation
+                  Websites.
                 </p>
               </div>
-      
+
               <!-- FAQ Item 5 -->
               <div class="faq-item">
                 <div class="icon">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                    </path>
                   </svg>
                 </div>
                 <p class="text">
@@ -227,20 +308,22 @@
               <div class="word">We</div>
               <div class="word">Value</div>
             </h2>
-      
+
             <!-- Service Description Grid -->
             <div class="service-grid">
               <!-- Service Item 1 -->
               <div class="service-item">
                 <div class="service-icon">
-                  <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/High-Quality-Services1.svg" alt="High Quality Services">
+                  <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/High-Quality-Services1.svg"
+                    alt="High Quality Services">
                 </div>
                 <h3 class="title">Highest Quality Service</h3>
                 <p class="description">
-                  We ensure that we fulfill our commitment to our clients by delivering our work on time, with the highest quality and precision.
+                  We ensure that we fulfill our commitment to our clients by delivering our work on time, with the
+                  highest quality and precision.
                 </p>
               </div>
-      
+
               <!-- Service Item 2 -->
               <div class="service-item">
                 <div class="service-icon">
@@ -248,10 +331,11 @@
                 </div>
                 <h3 class="title">Flexibility</h3>
                 <p class="description">
-                  We are responsible for meeting our clients' requirements as part of our work, so we offer the flexibility necessary to ensure that the service is delivered in its optimal form.
+                  We are responsible for meeting our clients' requirements as part of our work, so we offer the
+                  flexibility necessary to ensure that the service is delivered in its optimal form.
                 </p>
               </div>
-      
+
               <!-- Service Item 3 -->
               <div class="service-item">
                 <div class="service-icon">
@@ -259,10 +343,11 @@
                 </div>
                 <h3 class="title">Clarity</h3>
                 <p class="description">
-                  We are committed to being clear with the client by answering all his inquiries and providing all the necessary details within the project.
+                  We are committed to being clear with the client by answering all his inquiries and providing all the
+                  necessary details within the project.
                 </p>
               </div>
-      
+
               <!-- Service Item 4 -->
               <div class="service-item">
                 <div class="service-icon">
@@ -270,29 +355,34 @@
                 </div>
                 <h3 class="title">Networking</h3>
                 <p class="description">
-                  We are committed to fostering meaningful connections and strengthening public relations between our clients to open up new avenues of collaboration.
+                  We are committed to fostering meaningful connections and strengthening public relations between our
+                  clients to open up new avenues of collaboration.
                 </p>
               </div>
-      
+
               <!-- Service Item 5 -->
               <div class="service-item">
                 <div class="service-icon">
-                  <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Continuoas-Training1.svg" alt="Continuous Training">
+                  <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Continuoas-Training1.svg"
+                    alt="Continuous Training">
                 </div>
                 <h3 class="title">Continuous Training</h3>
                 <p class="description">
-                  We are dedicated to providing our employees with regular training every three months to ensure the growth of their skills and expand their knowledge.
+                  We are dedicated to providing our employees with regular training every three months to ensure the
+                  growth of their skills and expand their knowledge.
                 </p>
               </div>
-      
+
               <!-- Service Item 6 -->
               <div class="service-item">
                 <div class="service-icon">
-                  <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Remotely-Work1-.svg" alt="Remotely Work">
+                  <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Remotely-Work1-.svg"
+                    alt="Remotely Work">
                 </div>
                 <h3 class="title">Remotely Work</h3>
                 <p class="description">
-                  This has enabled us to create a more flexible and productive working environment, while also allowing us to tap into a wider pool of talent.
+                  This has enabled us to create a more flexible and productive working environment, while also allowing
+                  us to tap into a wider pool of talent.
                 </p>
               </div>
             </div>
@@ -308,29 +398,44 @@
             <div class="agency-text">
               <h2 class="heading">Our Team At Your Service</h2>
               <p class="description">
-                Our advisory team comprises seasoned brand upgrading consultants and a highly skilled marketing team that is currently collaborating with some of the most renowned names worldwide. Furthermore, we have numerous medium and small-sized companies that are keen on elevating their level of competition.
+                Our advisory team comprises seasoned brand upgrading consultants and a highly skilled marketing team
+                that is currently collaborating with some of the most renowned names worldwide. Furthermore, we have
+                numerous medium and small-sized companies that are keen on elevating their level of competition.
               </p>
               <p class="highlight">
                 Our Track Record Of Success Speaks For Itself.
               </p>
             </div>
-      
+
             <!-- CEO Section -->
             <div class="ceo">
-              <div class="container">
+              <div class="">
                 <div class="ceo-content">
                   <!-- CEO Image -->
                   <div class="ceo-image">
                     <img src="path-to-image.jpg" alt="Yehya Alaa Fallaha">
                   </div>
-      
+
                   <!-- CEO Details -->
                   <div class="ceo-details">
                     <span class="ceo-name">Yehya Alaa Fallaha</span>
                     <h3 class="ceo-title">CEO and Founder</h3>
                     <div class="ceo-description">
                       <p>
-                        Yehya Fallaha is a seasoned professional with over 10 years of experience in the design, photography, video montage, and motion graphics industry. Since 2014, he has been working as a successful freelancer, credited with formulating and implementing effective marketing strategies for numerous medium and small-sized companies across various countries. With a proven track record in leading marketing and technical teams, Yehya has collaborated with several local and international organizations, companies, and institutions, including Mobaderoon, JCI, and the Aleppo Chamber of Industry. In addition to his professional accomplishments, Yehya possesses exceptional public speaking skills, which he has utilized to train and inspire Syrian youth in various fields such as design, e-marketing, and photography. He has also been a staunch supporter of youth in several pioneering projects and international events, including TEDx. In 2018, Yehya founded Blue Orange, the first startup company in Aleppo specializing in electronic marketing and website marketing. He trained and qualified a team to work alongside To this day, he continues to develop Blue Orange, renewing its goals and strategies to become the leading company in Aleppo and Syria, and who knows maybe in the world.
+                        Yehya Fallaha is a seasoned professional with over 10 years of experience in the design,
+                        photography, video montage, and motion graphics industry. Since 2014, he has been working as a
+                        successful freelancer, credited with formulating and implementing effective marketing strategies
+                        for numerous medium and small-sized companies across various countries. With a proven track
+                        record in leading marketing and technical teams, Yehya has collaborated with several local and
+                        international organizations, companies, and institutions, including Mobaderoon, JCI, and the
+                        Aleppo Chamber of Industry. In addition to his professional accomplishments, Yehya possesses
+                        exceptional public speaking skills, which he has utilized to train and inspire Syrian youth in
+                        various fields such as design, e-marketing, and photography. He has also been a staunch
+                        supporter of youth in several pioneering projects and international events, including TEDx. In
+                        2018, Yehya founded Blue Orange, the first startup company in Aleppo specializing in electronic
+                        marketing and website marketing. He trained and qualified a team to work alongside To this day,
+                        he continues to develop Blue Orange, renewing its goals and strategies to become the leading
+                        company in Aleppo and Syria, and who knows maybe in the world.
                       </p>
                     </div>
                   </div>
@@ -352,7 +457,8 @@
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Abdulrazzak.jpg" alt="Abdulrazzak Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Abdulrazzak.jpg"
+                      alt="Abdulrazzak Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Abdulrazzak Kabbani</span>
@@ -360,12 +466,13 @@
                   </div>
                 </div>
               </div>
-      
+
               <!-- Slide 2 -->
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Nour-Nassani.jpg" alt="Nour Nassani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Nour-Nassani.jpg"
+                      alt="Nour Nassani">
                   </div>
                   <div class="text">
                     <span class="name">Nour Nassani</span>
@@ -373,12 +480,13 @@
                   </div>
                 </div>
               </div>
-      
+
               <!-- Slide 3 -->
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Abdo.jpg" alt="Abdulwahab Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Abdo.jpg"
+                      alt="Abdulwahab Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Abdulwahab Kabbani</span>
@@ -386,12 +494,13 @@
                   </div>
                 </div>
               </div>
-      
+
               <!-- Slide 4 -->
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp" alt="Abdulwahab Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp"
+                      alt="Abdulwahab Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Mohammad Hammami</span>
@@ -399,12 +508,13 @@
                   </div>
                 </div>
               </div>
-      
+
               <!-- Slide 5 -->
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp" alt="Abdulwahab Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp"
+                      alt="Abdulwahab Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Mohammad Hammami</span>
@@ -417,7 +527,8 @@
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp" alt="Abdulwahab Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp"
+                      alt="Abdulwahab Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Mohammad Hammami</span>
@@ -430,7 +541,8 @@
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp" alt="Abdulwahab Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp"
+                      alt="Abdulwahab Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Mohammad Hammami</span>
@@ -443,7 +555,8 @@
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp" alt="Abdulwahab Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp"
+                      alt="Abdulwahab Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Mohammad Hammami</span>
@@ -456,7 +569,8 @@
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp" alt="Abdulwahab Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp"
+                      alt="Abdulwahab Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Mohammad Hammami</span>
@@ -469,7 +583,8 @@
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp" alt="Abdulwahab Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp"
+                      alt="Abdulwahab Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Mohammad Hammami</span>
@@ -482,7 +597,8 @@
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp" alt="Abdulwahab Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp"
+                      alt="Abdulwahab Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Mohammad Hammami</span>
@@ -495,7 +611,8 @@
               <div class="swiper-slide">
                 <div class="box">
                   <div class="image">
-                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp" alt="Abdulwahab Kabbani">
+                    <img src="https://blueorangedesigns.com/wp-content/uploads/2024/11/Hammami.webp"
+                      alt="Abdulwahab Kabbani">
                   </div>
                   <div class="text">
                     <span class="name">Mohammad Hammami</span>
@@ -505,7 +622,7 @@
               </div>
               <!-- Add more slides as needed -->
             </div>
-      
+
             <!-- Swiper Navigation Buttons -->
             <div class="swiper-button-prev">
               &#10140;
@@ -513,7 +630,7 @@
             <div class="swiper-button-next">
               &#10140;
             </div>
-      
+
             <!-- Swiper Pagination -->
             <div class="swiper-pagination"></div>
           </div>
@@ -532,18 +649,24 @@
               <span class="word">To</span>
               <span class="word">You</span>
             </h2>
-      
+
             <!-- FAQ Items -->
             <div class="faq-items">
               <!-- FAQ Item 1 -->
               <div class="faq-item">
                 <div class="faq-header">
                   <div class="icon">
-                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"></path>
+                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z">
+                      </path>
                     </svg>
-                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
+                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                      </path>
                     </svg>
                   </div>
                   <h3 class="question">Why Choose Blue Orange?</h3>
@@ -551,33 +674,46 @@
                 <div class="faq-content">
                   <div class="answer">
                     <div class="icon">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                        </path>
                       </svg>
                     </div>
                     <p>We are committed to providing the highest quality products at a fair and reasonable price.</p>
                   </div>
                   <div class="answer">
                     <div class="icon">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                        </path>
                       </svg>
                     </div>
-                    <p>We implement a rigorous evaluation and monitoring process to optimize your time and resources, ultimately saving you both time and money.</p>
+                    <p>We implement a rigorous evaluation and monitoring process to optimize your time and resources,
+                      ultimately saving you both time and money.</p>
                   </div>
                   <!-- Add more answers as needed -->
                 </div>
               </div>
-      
+
               <!-- FAQ Item 2 -->
               <div class="faq-item">
                 <div class="faq-header">
                   <div class="icon">
-                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"></path>
+                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z">
+                      </path>
                     </svg>
-                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
+                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                      </path>
                     </svg>
                   </div>
                   <h3 class="question">How Many Days Does It Take To Implement A Brand?</h3>
@@ -585,24 +721,37 @@
                 <div class="faq-content">
                   <div class="answer">
                     <div class="icon">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                        </path>
                       </svg>
                     </div>
-                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand that quality work takes time, which is why we require 8 working days to complete your branding project. However, we also offer flexibility for clients who are in a rush. Rest assured that your project will be thoroughly studied and a mutually agreed-upon timeline will be established to ensure your satisfaction.</p>
+                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand
+                      that quality work takes time, which is why we require 8 working days to complete your branding
+                      project. However, we also offer flexibility for clients who are in a rush. Rest assured that your
+                      project will be thoroughly studied and a mutually agreed-upon timeline will be established to
+                      ensure your satisfaction.</p>
                   </div>
                 </div>
               </div>
-      
+
               <!-- FAQ Item 3 -->
               <div class="faq-item">
                 <div class="faq-header">
                   <div class="icon">
-                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"></path>
+                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z">
+                      </path>
                     </svg>
-                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
+                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                      </path>
                     </svg>
                   </div>
                   <h3 class="question">How Many Days Does It Take To Implement A Brand?</h3>
@@ -610,24 +759,37 @@
                 <div class="faq-content">
                   <div class="answer">
                     <div class="icon">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                        </path>
                       </svg>
                     </div>
-                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand that quality work takes time, which is why we require 8 working days to complete your branding project. However, we also offer flexibility for clients who are in a rush. Rest assured that your project will be thoroughly studied and a mutually agreed-upon timeline will be established to ensure your satisfaction.</p>
+                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand
+                      that quality work takes time, which is why we require 8 working days to complete your branding
+                      project. However, we also offer flexibility for clients who are in a rush. Rest assured that your
+                      project will be thoroughly studied and a mutually agreed-upon timeline will be established to
+                      ensure your satisfaction.</p>
                   </div>
                 </div>
               </div>
-      
+
               <!-- FAQ Item 4 -->
               <div class="faq-item">
                 <div class="faq-header">
                   <div class="icon">
-                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"></path>
+                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z">
+                      </path>
                     </svg>
-                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
+                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                      </path>
                     </svg>
                   </div>
                   <h3 class="question">How Many Days Does It Take To Implement A Brand?</h3>
@@ -635,24 +797,37 @@
                 <div class="faq-content">
                   <div class="answer">
                     <div class="icon">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                        </path>
                       </svg>
                     </div>
-                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand that quality work takes time, which is why we require 8 working days to complete your branding project. However, we also offer flexibility for clients who are in a rush. Rest assured that your project will be thoroughly studied and a mutually agreed-upon timeline will be established to ensure your satisfaction.</p>
+                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand
+                      that quality work takes time, which is why we require 8 working days to complete your branding
+                      project. However, we also offer flexibility for clients who are in a rush. Rest assured that your
+                      project will be thoroughly studied and a mutually agreed-upon timeline will be established to
+                      ensure your satisfaction.</p>
                   </div>
                 </div>
               </div>
-      
+
               <!-- FAQ Item 5 -->
               <div class="faq-item">
                 <div class="faq-header">
                   <div class="icon">
-                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"></path>
+                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z">
+                      </path>
                     </svg>
-                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
+                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                      </path>
                     </svg>
                   </div>
                   <h3 class="question">How Many Days Does It Take To Implement A Brand?</h3>
@@ -660,24 +835,37 @@
                 <div class="faq-content">
                   <div class="answer">
                     <div class="icon">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                        </path>
                       </svg>
                     </div>
-                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand that quality work takes time, which is why we require 8 working days to complete your branding project. However, we also offer flexibility for clients who are in a rush. Rest assured that your project will be thoroughly studied and a mutually agreed-upon timeline will be established to ensure your satisfaction.</p>
+                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand
+                      that quality work takes time, which is why we require 8 working days to complete your branding
+                      project. However, we also offer flexibility for clients who are in a rush. Rest assured that your
+                      project will be thoroughly studied and a mutually agreed-upon timeline will be established to
+                      ensure your satisfaction.</p>
                   </div>
                 </div>
               </div>
-      
+
               <!-- FAQ Item 6 -->
               <div class="faq-item">
                 <div class="faq-header">
                   <div class="icon">
-                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"></path>
+                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z">
+                      </path>
                     </svg>
-                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
+                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                      </path>
                     </svg>
                   </div>
                   <h3 class="question">How Many Days Does It Take To Implement A Brand?</h3>
@@ -685,24 +873,37 @@
                 <div class="faq-content">
                   <div class="answer">
                     <div class="icon">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                        </path>
                       </svg>
                     </div>
-                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand that quality work takes time, which is why we require 8 working days to complete your branding project. However, we also offer flexibility for clients who are in a rush. Rest assured that your project will be thoroughly studied and a mutually agreed-upon timeline will be established to ensure your satisfaction.</p>
+                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand
+                      that quality work takes time, which is why we require 8 working days to complete your branding
+                      project. However, we also offer flexibility for clients who are in a rush. Rest assured that your
+                      project will be thoroughly studied and a mutually agreed-upon timeline will be established to
+                      ensure your satisfaction.</p>
                   </div>
                 </div>
               </div>
-      
+
               <!-- FAQ Item 7 -->
               <div class="faq-item">
                 <div class="faq-header">
                   <div class="icon">
-                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"></path>
+                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z">
+                      </path>
                     </svg>
-                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
+                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                      </path>
                     </svg>
                   </div>
                   <h3 class="question">How Many Days Does It Take To Implement A Brand?</h3>
@@ -710,24 +911,37 @@
                 <div class="faq-content">
                   <div class="answer">
                     <div class="icon">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                        </path>
                       </svg>
                     </div>
-                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand that quality work takes time, which is why we require 8 working days to complete your branding project. However, we also offer flexibility for clients who are in a rush. Rest assured that your project will be thoroughly studied and a mutually agreed-upon timeline will be established to ensure your satisfaction.</p>
+                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand
+                      that quality work takes time, which is why we require 8 working days to complete your branding
+                      project. However, we also offer flexibility for clients who are in a rush. Rest assured that your
+                      project will be thoroughly studied and a mutually agreed-upon timeline will be established to
+                      ensure your satisfaction.</p>
                   </div>
                 </div>
               </div>
-      
+
               <!-- FAQ Item 8 -->
               <div class="faq-item">
                 <div class="faq-header">
                   <div class="icon">
-                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"></path>
+                    <svg class="icon-minus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z">
+                      </path>
                     </svg>
-                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path>
+                    <svg class="icon-plus" stroke="currentColor" fill="currentColor" stroke-width="0"
+                      viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z">
+                      </path>
                     </svg>
                   </div>
                   <h3 class="question">How Many Days Does It Take To Implement A Brand?</h3>
@@ -735,15 +949,22 @@
                 <div class="faq-content">
                   <div class="answer">
                     <div class="icon">
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z"></path>
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M170.718 216.482L141.6 245.6l93.6 93.6 208-208-29.118-29.118L235.2 279.918l-64.482-63.436zM422.4 256c0 91.518-74.883 166.4-166.4 166.4S89.6 347.518 89.6 256 164.482 89.6 256 89.6c15.6 0 31.2 2.082 45.764 6.241L334 63.6C310.082 53.2 284.082 48 256 48 141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208h-41.6z">
+                        </path>
                       </svg>
                     </div>
-                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand that quality work takes time, which is why we require 8 working days to complete your branding project. However, we also offer flexibility for clients who are in a rush. Rest assured that your project will be thoroughly studied and a mutually agreed-upon timeline will be established to ensure your satisfaction.</p>
+                    <p>At Blue Orange, we pride ourselves on delivering professional work to our clients. We understand
+                      that quality work takes time, which is why we require 8 working days to complete your branding
+                      project. However, we also offer flexibility for clients who are in a rush. Rest assured that your
+                      project will be thoroughly studied and a mutually agreed-upon timeline will be established to
+                      ensure your satisfaction.</p>
                   </div>
                 </div>
               </div>
-      
+
               <!-- Add more FAQ items as needed -->
             </div>
           </div>
@@ -787,7 +1008,7 @@
                 </ul>
               </div>
             </div>
-  
+
             <!-- Right Column: Quick Links and Contact Info -->
             <div class="footer-right">
               <!-- Quick Links -->
@@ -800,7 +1021,7 @@
                   <li><a href="https://blueorangedesigns.com/contact-us/">Contact</a></li>
                 </ul>
               </div>
-  
+
               <!-- Contact Info -->
               <div class="contact-info">
                 <span class="section-title">Contact Us:</span>
@@ -815,7 +1036,7 @@
       <!-- End Footer   -->
     </main>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>

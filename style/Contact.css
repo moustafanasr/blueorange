@@ -16,12 +16,12 @@
 .landing-news .landing-news-content .heading h2 {
   display: flex;
   flex-direction: row;
-  gap: 1.5625vw;
+  gap: 1vw;
 
 }
 
 .landing-news .landing-news-content .heading h2 span {
-  font-size: calc(90 / 1920 * 100vw);
+  font-size: 4.729vw;
   font-weight: 700;
   color: var(--e-global-color-secondary);
   line-height: 1.2;
@@ -32,7 +32,7 @@
 
 .landing-news .landing-news-content .description {
   font-size: 0.9375vw;
-  font-weight: 100;
+  font-weight: 500;
   --tw-text-opacity: .8;
   color: rgb(73 74 81 / var(--tw-text-opacity));
   /* overflow: hidden; */
@@ -42,7 +42,7 @@
 
 
 .text-container {
-  font-weight: 900;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(15 139 244 / var(--tw-text-opacity));
   text-transform: capitalize;
@@ -83,7 +83,7 @@
   border-radius: 1.302vw;
 
   overflow: hidden;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .buttons:hover {
@@ -104,12 +104,46 @@
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-  /* .landing-news .landing-news-content .heading h2 {
-    font-size: 74px;
-  } */
+
+  .landing-news .landing-news-content .heading h2 {
+    /* font-size: 74px; */
+    flex-wrap: wrap;
+    gap: 2vw;
+  }
+
+  .landing-news .landing-news-content .heading h2 span {
+    font-size: 90px;
+  }
+
+  .landing-news .landing-news-content .description {
+    font-size: 18px;
+  }
+
+  .text-container {
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(15 139 244 / var(--tw-text-opacity));
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-top: 1vw;
+  }
+
+  .buttons {
+    font-size: 2vw;
+    border-radius: 6vw;
+    -webkit-border-radius: 6vw;
+    -moz-border-radius: 6vw;
+    -ms-border-radius: 6vw;
+    -o-border-radius: 6vw;
+  }
+
+  .btn-span {
+    padding: 1.2vw 2vw;
+  }
 }
 
 @media (max-width: 768px) {
+
   /* .landing-news .landing-news-content .landing-news-content {
     gap: 14px;
   }
@@ -129,28 +163,41 @@
   .btn-span {
     padding: 10px 14px;
   } */
+  .buttons {
+    font-size: 3vw;
+  }
 }
 
 @media (max-width: 480px) {
-  /* .landing-news .landing-news-content .heading h2 {
-    font-size: 34px;
-  } */
+  .landing-news .landing-news-content .heading h2 span{
+    font-size: 38px;
+  }
 
   .landing-news .landing-news-content .description {
-    font-size: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: rgb(73 74 81 / var(--tw-text-opacity));
+    margin: 20px 0px;
   }
 
   .landing-news .landing-news-content .text-container {
-    font-size: 10px;
+    font-size: 20px;
   }
+
+  .btn-span {
+    padding: 3vw 4vw;
+  }
+
   .landing-news .landing-news-content .buttons {
-    font-size: 10px;
+    font-size: 14px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-}
+    margin-top: 20px;
+  }
 }
 
 /* End code landing-news  */
@@ -220,46 +267,59 @@
   color: rgb(15 139 244 / var(--tw-text-opacity));
   font-size: .9vw;
   /* Responsive font size */
-  font-weight: 100;
-  cursor: pointer;
+  font-weight: 500;
+  /* cursor: pointer; */
   text-decoration: none;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  /* .info-box {
+  .info-box {
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
     padding: 45px 30px;
-  } */
+  }
+
+  .heading {
+    font-size: calc(46 / 1920 * 100vw);
+  }
+
+  .info-title {
+    font-size: 24px;
+  }
+
+  .info-detail a {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
-  /* .heading {
+  .heading {
     font-size: 38px;
-  } */
+  }
 }
 
 @media (max-width: 480px) {
-  /* .heading {
-    font-size: 28px;
-  } */
+
+  .heading {
+    font-size: 28px !important;
+  }
   .info-title {
     --tw-text-opacity: 1;
     color: rgb(255 122 0 / var(--tw-text-opacity));
-    font-size: 2.2vw;
+    font-size: 24px;
     /* Responsive font size */
     font-weight: 600;
   }
-  
+
   .info-detail a {
     --tw-text-opacity: 1;
     color: rgb(15 139 244 / var(--tw-text-opacity));
-    font-size: 1.6vw;
+    font-size: 16px;
     /* Responsive font size */
-    font-weight: 100;
-    cursor: pointer;
+    font-weight: 500;
+    /* cursor: pointer; */
     text-decoration: none;
   }
 }
@@ -291,6 +351,13 @@
   .map-iframe {
     height: 400px;
     /* Adjust height for tablets */
+  }
+}
+
+@media (max-width: 1024px) {
+  .map-iframe {
+    min-height: 40vh;
+    /* Adjust height for mobile */
   }
 }
 
@@ -353,7 +420,7 @@
 .job-item {
   display: flex;
   flex-direction: column;
-  gap: 2.5vw;
+  gap: 1.5vw;
   border-bottom: 1px solid;
   --tw-border-opacity: .1;
   border-color: rgb(236 241 244 / var(--tw-border-opacity));
@@ -425,11 +492,11 @@
 .apply-button {
   --tw-bg-opacity: 1;
   background-color: rgb(15 139 244 / var(--tw-bg-opacity)) !important;
-  font-weight: 100;
+  font-weight: 600;
   text-transform: capitalize;
   border: none;
-  padding: 1vw 2vw;
-  cursor: pointer;
+  padding: .7vw 1.5vw;
+  /* cursor: pointer; */
   overflow: hidden;
   position: relative;
   border-radius: 2.5vw;
@@ -450,6 +517,47 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 46px;
+  }
+
+  .job-listings {
+    gap: 25px;
+  }
+
+  .job-item {
+    gap: 40px;
+  }
+
+  .job-details {
+    /* flex-direction: column;
+    align-items: flex-start; */
+    /* gap: 20px; */
+  }
+
+  .apply-content {
+    /* gap: 45px; */
+    margin-top: 20px;
+  }
+
+  .apply-content p {
+    font-size: 2.2vw;
+  }
+
+  .apply-button {
+    padding: 1.7vw 2.5vw;
+    border-radius: 2.5vw;
+    -webkit-border-radius: 2.5vw;
+    -moz-border-radius: 2.5vw;
+    -ms-border-radius: 2.5vw;
+    -o-border-radius: 2.5vw;
+    font-size: 2vw;
+    font-weight: 500;
+  }
+
+}
+
 @media (max-width: 768px) {
   .job-listings {
     gap: 25px;
@@ -465,10 +573,24 @@
     /* gap: 45px; */
     margin-top: 20px;
   }
+
   .apply-content p {
     font-size: 4.4vw;
 
   }
+}
+
+@media (max-width: 480px) {
+  .apply-button {
+    padding: 2.7vw 4.5vw;
+    border-radius: 6vw;
+    -webkit-border-radius: 6vw;
+    -moz-border-radius: 6vw;
+    -ms-border-radius: 6vw;
+    -o-border-radius: 6vw;
+    font-size: 4vw;
+    font-weight: 500;
+}
 }
 
 
